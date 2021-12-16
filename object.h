@@ -36,13 +36,17 @@ struct Place : Thing {
   Place (string name, int id, int level);
   ~Place();
   vector<Person> People;
+
+  int disp();
 };
 
 struct Town : Thing {
   Town();
   Town(string name, int id, int level, int pop);
   ~Town();
-  vector<Place> Locations;
+  vector<Place> Places;
   int pop;
+
+  int disp();
 };
 

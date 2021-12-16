@@ -8,11 +8,15 @@ int main (){
   lvl = pop = 5;
   name = "Pallet Town";
   struct Town * town = new Town(name, ++id, lvl, pop); 
-  town.disp();
+  town->disp();
   return 0;
 };
 
-void prompt (string &name,int &lvl,int  string &pop){
+/*
+
+ 
+ 
+void prompt (string &name,int &lvl,int  &pop){
   char confirm = 'n';
   while (confirm != 'y'){
   cout << "[]==========================[]\n";
@@ -44,3 +48,4 @@ void prompt (string &name,int &lvl,int  string &pop){
   cin >> confirm;
   }
 };
+*/
